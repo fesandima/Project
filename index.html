@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відомості про навчальний заклад</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="parallax" id="home">
+        <div class="overlay">
+            <h1>Навчальний заклад "Освіта"</h1>
+        </div>
+    </header>
+
+    <section class="content" id="about">
+        <h2>Про нас</h2>
+        <p>Наш навчальний заклад пропонує якісну освіту з використанням сучасних методик та технологій. Ми готуємо наших студентів до успішної кар'єри та особистісного розвитку.</p>
+    </section>
+
+    <section class="parallax" id="programs">
+        <div class="overlay">
+            <h2>Наші програми</h2>
+        </div>
+    </section>
+
+    <section class="content" id="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Фото 1">
+            <img src="image2.jpg" alt="Фото 2">
+            <img src="image3.jpg" alt="Фото 3">
+        </div>
+    </section>
+
+    <section class="parallax" id="contact">
+        <div class="overlay">
+            <h2>Контакти</h2>
+        </div>
+    </section>
+
+    <section class="content" id="registration">
+        <h2>Реєстрація на пробний урок</h2>
+        <form action="#" method="POST" id="registration-form">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Відправити</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Навчальний заклад "Освіта". Всі права захищені.</p>
+    </footer>
+
+    <script type="text/javascript">
+        document.addEventListener('scroll', function() {
+        const parallaxElements = document.querySelectorAll('.parallax');
+        parallaxElements.forEach(function(element) {
+            let scrollPosition = window.pageYOffset;
+            element.style.backgroundPositionY = (scrollPosition * 0.5) + 'px';
+            });
+        });
+
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Форма успішно відправлена!');
+        })
+    </script>
+</body>
+</html>

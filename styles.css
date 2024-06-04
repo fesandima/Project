@@ -1,0 +1,104 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header, .parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header {
+    background-image: url('header-bg.jpg');
+}
+
+#programs {
+    background-image: url('programs-bg.jpg');
+}
+
+#contact {
+    background-image: url('contact-bg.jpg');
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.overlay h1, .overlay h2 {
+    margin: 0;
+    padding: 20px;
+}
+
+.content {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+}
+
+#registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#registration-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#registration-form input, #registration-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#registration-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#registration-form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

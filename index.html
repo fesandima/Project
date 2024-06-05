@@ -1,80 +1,63 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Відомості про навчальний заклад</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Project Site</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
 </head>
 <body>
-    <header class="parallax" id="home">
-        <div class="overlay">
-            <h1>Навчальний заклад "Освіта"</h1>
+    <div class="container">
+        <div class="title">
+            <img src="/logo.png" alt="Логотип" style="width: 150px; height: 150px;">
+            <span class="main-text">Київський фаховий коледж туризму та готельного <br> господарства</span>
         </div>
-    </header>
-
-    <section class="content" id="about">
-        <h2>Про нас</h2>
-        <p>Наш навчальний заклад пропонує якісну освіту з використанням сучасних методик та технологій. Ми готуємо наших студентів до успішної кар'єри та особистісного розвитку.</p>
-    </section>
-
-    <section class="parallax" id="programs">
-        <div class="overlay">
-            <h2>Наші програми</h2>
+        <header class="header">
+            <ul>
+                <li><a href="#">ГОЛОВНА</a></li>
+                <li><a  class="about" href="#">ПРО КОЛЕДЖ</a></li>
+                <li><a href="/news.html">НОВИНИ</a></li>
+                <li><a href="#">ВСТУПНИКУ</a></li>
+            </ul>
+        </header>
+    </div>
+    
+    
+    <div class="mainpage">
+        <div>
+            <h2 class="h2" style="margin-top: 50px;">Шановні випускники загальноосвітніх навчальних закладів, професійно-технічних училищ, працівники, які прагнуть поєднати роботу з навчанням!</h2>
+            <p>Київський фаховий коледж туризму та готельного господарства ласкаво запрошує вас поповнити дружню сім'ю студентів першого в Україні навчального закладу, який понад 40 років тому розпочав підготовку фахівців для сфери гостинності. Завдяки високому рівню професійної підготовки, понад 20 тисяч випускників навчального закладу є конкурентоспроможними на сучасному ринку праці та успішно працюють як в Україні, так і в інших країнах світу.
+            І в наш час непередбачуваних викликів і швидких змін коледж утримує провідні позиції на ринку освітянських послуг та продовжує динамічно розвиватись: збільшується кількість актуальних для сучасного ринку праці спеціальностей, розширюється спектр різних рівнів надання освітніх послуг від повної загальної середньої освіти до фахового молодшого бакалавра та бакалавра, постійно оновлюється матеріально-технічна база, зміцнюється міжнародне співробітництво.
+            Надзвичайною популярністю користується проєкт паралельного навчання, нещодавно започаткований спільно з польським Університетом економіки в місті Бидгощ. У результаті його реалізації випускники отримують відразу два дипломи бакалавра за спорідненими спеціальностями, один з них - європейського зразка.
+            Втілити мрію в життя, опанувати секретами обраної спеціальності і стати справжнім професіоналом у багатьох сферах гостинності та бізнесової діяльності вам допоможе досвідчений
+            </p>
         </div>
-    </section>
-
-    <section class="content" id="gallery">
-        <h2>Галерея</h2>
-        <div class="gallery">
-            <img src="image1.jpg" alt="Фото 1">
-            <img src="image2.jpg" alt="Фото 2">
-            <img src="image3.jpg" alt="Фото 3">
+        <div class="img">
+            <img src="/matvienko.jpg" alt="" width="400px" height="300px">
+            <!-- <p>Матвієнко Анатолій Тихонович</p> -->
         </div>
-    </section>
-
-    <section class="parallax" id="contact">
-        <div class="overlay">
-            <h2>Контакти</h2>
+    </div>
+    <div class="form-container">
+        <div class="form-text">
+            <p style="padding-right: 100px;font-size: 15pt;">Запит для абітурієнтів:</p>
         </div>
-    </section>
-
-    <section class="content" id="registration">
-        <h2>Реєстрація на пробний урок</h2>
-        <form action="#" method="POST" id="registration-form">
-            <label for="name">Ім'я:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Електронна пошта:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Телефон:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="message">Повідомлення:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Відправити</button>
+        <form class="horizontal-form" style="align-items: center;">
+            <input type="text" placeholder="Ваше ім'я:">
+            <input type="email" placeholder="Ваш e-mail:">
+            <input type="tel" placeholder="Ваш номер телефону:" pattern="+38[0-9]{3}[0-9]{3}[0-9]{4}" required>
+            <button type="submit">НАДІСЛАТИ</button>
         </form>
-    </section>
+    </div>
+    
 
-    <footer>
-        <p>&copy; 2024 Навчальний заклад "Освіта". Всі права захищені.</p>
-    </footer>
-
-    <script type="text/javascript">
-        document.addEventListener('scroll', function() {
-        const parallaxElements = document.querySelectorAll('.parallax');
-        parallaxElements.forEach(function(element) {
-            let scrollPosition = window.pageYOffset;
-            element.style.backgroundPositionY = (scrollPosition * 0.5) + 'px';
-            });
+    <script>
+        document.querySelector('.horizontal-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Ваша заявка була успішно прийнята!Незабаром ми вишлемо вам лист на почтову скриньку з інструкцією подальших дій!');
         });
-
-        document.getElementById('registration-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Форма успішно відправлена!');
-        })
     </script>
 </body>
 </html>

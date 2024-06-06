@@ -7,101 +7,195 @@
     <link rel="stylesheet" href="/news.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .parallax {
+            height: 100vh;
+            background: url('/college-building.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+        .parallax-content {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .container {
+            padding: 20px;
+        }
+        .title img {
+            width: 150px;
+            height: 150px;
+        }
+        .header ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .header li {
+            margin: 0 15px;
+        }
+        .header a {
+            text-decoration: none;
+            color: black;
+        }
+        .news-container {
+            padding: 20px;
+        }
+        .news-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .news-section li {
+            margin: 10px 0;
+        }
+        .footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-column {
+            width: 20%;
+            min-width: 200px;
+        }
+        .footer-column h3 {
+            margin-bottom: 10px;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .corner p {
+            display: inline;
+            margin: 0 5px;
+        }
+        .line {
+            border-bottom: 2px solid #000;
+            margin: 20px 0;
+        }
+        .content-title {
+            text-align: center;
+        }
+        .day p {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
+    <div class="parallax">
+        <div class="parallax-content">
+            Київський фаховий коледж туризму та готельного господарства
+        </div>
+    </div>
+
     <div class="container">
         <div class="title">
-            <img src="/logo.png" alt="Логотип" style="width: 150px; height: 150px;">
+            <img src="/logo.png" alt="Логотип">
             <span class="main-text">Київський фаховий коледж туризму та готельного <br> господарства</span>
         </div>
         <header class="header">
             <ul>
                 <li><a href="/index.html">ГОЛОВНА</a></li>
-                <li><a  class="about" href="#">ПРО КОЛЕДЖ</a></li>
+                <li><a class="about" href="#">ПРО КОЛЕДЖ</a></li>
                 <li><a href="/news.html"><p class="news">НОВИНИ</p></a></li>
                 <li><a href="#">ВСТУПНИКУ</a></li>
             </ul>
         </header>
     </div>
-    
-    <h2 style="font-family: Montserrat, sans-serif; color: #fff; font-size: 80px;">РОЗДІЛ НОВИН</h2>
+
+    <h2 style="color: #000; font-size: 60px; text-align: center; margin: 20px 0;">РОЗДІЛ НОВИН</h2>
     <div class="news-container">
         <div class="page">
             <div class="corner">
                 <p><a href="/index.html">Головна</a></p>
                 <p>/</p>
-                <p><a href="/index.html">Новини</a></p>
+                <p><a href="/news.html">Новини</a></p>
                 <p>/</p>
-                <p  ><a  style="color: black;"  href="/index.html">Загальні</a></p>
+                <p><a style="color: black;" href="/news.html">Загальні</a></p>
             </div>
             <div class="line"></div>
         </div>
         <div class="content">
             <div class="content-title">
-                <p style="font-family: Montserrat, sans-serif; color: black; margin-top: 100px; font-size: 70px ; font-weight: bold;">Вітаємо з Днем Києва!</p>
+                <p style="color: black; margin-top: 50px; font-size: 50px; font-weight: bold;">Вітаємо з Днем Києва!</p>
             </div>
             <div class="day">
-<p>Київський фаховий коледж туризму та готельного господарства вітає всіх жителів та гостей столиці України з Днем Києва! <br> Ми неймовірно пишаємося багатою історією нашого міста, яскравою культурою та знаковими пам'ятками.</p>
+                <p>Київський фаховий коледж туризму та готельного господарства вітає всіх жителів та гостей столиці України з Днем Києва! Ми неймовірно пишаємося багатою історією нашого міста, яскравою культурою та знаковими пам'ятками.</p>
+                <p>Наші здобувачі освіти підготували добірку маловідомих місць столиці для відвідування. Запрошуємо всіх приєднатися до пізнання цих скарбів та відчуття справжнього духу Києва.</p>           
+                <p>Київ, місто стійкості та сили, завжди був захищений хоробрими серцями. Висловлюємо глибоку подяку Збройним Силам України за їх непохитну мужність і відданість у захисті нашого улюбленого міста. Київ, за вашими сильними плечима, продовжує стояти високо і процвітати.</p> 
+                <p>Ще раз, з Днем Києва! Давайте разом святкувати стійкість, єдність і непримитний дух нашого міста!</p>
+            </div>
+            <div class="news-section">
+                <p style="font-weight: bold; font-size: 30px;">Розділи новин</p>
+                <ul>
+                    <li><a href="#">Загальні</a></li>
+                    <li><a href="#" style="white-space: nowrap;">Центр працевлаштування</a></li>
+                    <li><a href="#">Календар подій</a></li>
+                    <li><a href="#">Дні відкритих дверей</a></li>
+                    <li><a href="#">Інформаційний вісник</a></li>
+                    <li><a href="#">Студентські будні</a></li>
+                </ul>
+            </div>
+            <img src="/kyiv.png" alt="Київ" style="height: auto; width: 100%; max-width: 1000px; padding: 20px 0;">
+        </div>
+    </div>
 
-<p>Наші здобувачі освіти підготували добірку маловідомих місць столиці для відвідування. Запрошуємо всіх приєднатися до <br> пізнання цих скарбів та відчуття справжнього духу Києва.</p>           
-<p>Київ, місто стійкості та сили, завжди був захищений хоробрими серцями. Висловлюємо глибоку подяку Збройним Силам <br> України за їх непохитну мужність і відданість у захисті нашого улюбленого міста. Київ, за вашими сильними плечима, <br> продовжує стояти високо і процвітати.</p> 
-<p>Ще раз, з Днем Києва! Давайте разом святкувати стійкість, єдність і непримитний дух нашого міста!</p>
-</div>
-<div class="news-section">
-    <p style="    font-family: Montserrat, sans-serif; font-weight: bold; font-size: 30px; ">Розділи новин</p>
-    <ul>
-<li><a href="#">Загальні</a></li>
-<li><a href="#" style="white-space: nowrap;">Центр працевлаштування</a></li>
-<li><a href="#">Календар подій</a></li>
-<li><a href="#">Дні відкритих дверей</a></li>
-<li><a href="#">Інформаційний вісник</a></li>
-<li><a href="#">Студентські будні</a></li>
-    </ul>
-</div>
-<img src="/kyiv.png" alt="Київ" style="height: 600px; width: 1000px; padding-left: 150px;">
-
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3>ПРО КОЛЕДЖ</h3>
-            <p>Про Київський фаховий коледж туризму та готельного господарства</p>
-            <p>Витоки нашої історії</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>ПРО КОЛЕДЖ</h3>
+                <p>Про Київський фаховий коледж туризму та готельного господарства</p>
+                <p>Витоки нашої історії</p>
+            </div>
+            <div class="footer-column">
+                <h3>СТРУКТУРА</h3>
+                <p>Адміністрація</p>
+                <p>Відділення</p>
+                <p>Циклові комісії</p>
+                <p>Лабораторії</p>
+                <p>Бібліотека</p>
+            </div>
+            <div class="footer-column">
+                <h3>ВСТУПНИКУ</h3>
+                <p><a href="#">Правила прийому</a></p>
+                <p>Відомості про приймальну комісію</p>
+                <p>Перелік документів необхідних для вступу</p>
+                <p>Вартість навчання</p>
+            </div>
+            <div class="footer-column">
+                <h3>СТУДЕНТУ</h3>
+                <p>Розклад занять</p>
+                <p>Студентські будні</p>
+                <p>Спортивне життя</p>
+                <p>Студентський профком</p>
+            </div>
+            <div class="footer-column">
+                <h3>ВИКЛАДАЧАМ</h3>
+                <p>Методичні матеріали</p>
+                <p>Школа молодого викладача</p>
+                <p>На допомогу кураторам</p>
+            </div>
         </div>
-        <div class="footer-column">
-            <h3>СТРУКТУРА</h3>
-            <p>Адміністрація</p>
-            <p>Відділення</p>
-            <p>Циклові комісії</p>
-            <p>Лабораторії</p>
-            <p>Бібліотека</p>
+        <div class="footer-bottom">
+            <p>Князя Романа Мстиславича, 26, м. Київ 02192, Україна | Телефон: +38 (111) 111-11-11, 000-00-00</p>
         </div>
-        <div class="footer-column">
-            <h3>ВСТУПНИКУ</h3>
-            <p><a href="#">Правила прийому</a></p>
-            <p>Відомості про приймальну комісію</p>
-            <p>Перелік документів необхідних для вступу</p>
-            <p>Вартість навчання</p>
-        </div>
-        <div class="footer-column">
-            <h3>СТУДЕНТУ</h3>
-            <p>Розклад занять</p>
-            <p>Студентські будні</p>
-            <p>Спортивне життя</p>
-            <p>Студентський профком</p>
-        </div>
-        <div class="footer-column">
-            <h3>ВИКЛАДАЧАМ</h3>
-            <p>Методичні матеріали</p>
-            <p>Школа молодого викладача</p>
-            <p>На допомогу кураторам</p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>Князя Романа Мстиславича, 26, м. Київ 02192, Україна | Телефон: +38 (111) 111-11-11, 000-00-00</p>
-    </div>
-</footer>
-        </div>
-    </div>
+    </footer>
 </body>
 </html>

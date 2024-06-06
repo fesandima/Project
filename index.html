@@ -17,6 +17,59 @@
             height: 100vh;
             overflow: hidden;
             position: relative;
+            background: url('/2.jpg') no-repeat center center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .parallax-content {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .container {
+            padding: 20px;
+        }
+        .title img {
+            width: 150px;
+            height: 150px;
+        }
+        .header ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        .header li {
+            margin: 0 15px;
+        }
+        .header a {
+            text-decoration: none;
+            color: black;
+        }
+        .mainpage {
+            margin: 20px;
+        }
+        .form-container {
+            padding: 20px;
+        }
+        .horizontal-form input, .horizontal-form button {
+            margin: 5px;
+        }
+    </style>
+=======
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        .parallax {
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
             background: url('/2.png') no-repeat center center;
             background-attachment: fixed;
             background-size: cover;
@@ -59,6 +112,7 @@
             margin: 5px;
         }
     </style>
+>>>>>>> 858ba63591822712a56fd90e8be58709563393b0
 </head>
 <body>
     <div class="parallax">
@@ -69,7 +123,11 @@
 
     <div class="container">
         <div class="title">
+<<<<<<< HEAD
+            <img src="/logo.png" alt="Логотип">
+=======
             <img src="/1.png" alt="Логотип">
+>>>>>>> 858ba63591822712a56fd90e8be58709563393b0
             <span class="main-text">Київський фаховий коледж туризму та готельного <br> господарства</span>
         </div>
         <header class="header">
